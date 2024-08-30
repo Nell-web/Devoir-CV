@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: "Raleway_regular";
+    font-style: normal;
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype'), url('../FONTS/Raleway-Regular.otf') format('opentype'), url('../FONTS/Raleway-Regular.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: "Raleway_bold";
+    font-style: bold;
+    src: url('../fonts/Raleway-Bold.ttf') format('truetype');
+    src:url('../FONTS/Raleway-Bold.otf') format('opentype');
+    src: url('../FONTS/Raleway-Bold.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: "Raleway_italic";
+    font-style: italic;
+    src: url('../fonts/Raleway-Italic.ttf') format('truetype');
+    src:url('../FONTS/Raleway-Italic.otf') format('opentype');
+    src:url('../FONTS/Raleway-Italic.woff') format('woff');
+  }
+
+  
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2, h3 {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+header, main, footer {
+    width: 1160px;
+    margin: auto;
+    background-color: white;
+    border-right: 1px solid black;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #782221;
+}
+
+figure {
+    padding: 20px;
+    margin: 20px;
+}
+
+.profil_img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 6px 6px 25px rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+.profil_img:hover {
+    cursor: zoom-in;
+}
+
+figcaption {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    padding-top: 15px;
+}
+
+h1 {
+    font-size: 1.2em;
+    color: white;
+    font-family:"Lato", sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #2c1d27;
+    font-family: "Raleway_regular", sans-serif;
+    font-size: small;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.contact_address {
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.contact_address:hover, .contact_tel:hover, .contact_mail:hover {
+    text-decoration: underline;
+}
+
+.contact_mail {
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+}
+
+.contact_tel {
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: #782221;
+    color: white;
+    width: 300px;   
+}
+
+aside h2 {
+    background-color: #dbc2a4;
+    color:black;
+    font-family:"Lato", sans-serif;
+    font-style: bold;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 40px 20px 0;
+    padding: 5px 0 5px 15px; 
+}
+
+.about_me_content {
+    text-indent: 30px;
+    font-family: "Raleway_regular", sans-serif;
+    font-size: small;
+    color:inherit;
+    text-align: justify;
+    padding: 5px 40px 10px 10px;
+}
+
+aside ul {
+    font-family: "Raleway_regular", sans-serif;
+    font-size: small;
+    color: inherit;
+}
+
+.main_content h2 {
+    background-color: #dbc2a4;
+    color:black;
+    border-left : 7px solid #782221;
+    font-family:"Lato", sans-serif;
+    font-style: bold;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 25px 40px 10px 30px;
+    padding: 5px 0 10px 10px; 
+}
+
+.main_content {
+    display: block;
+    background-color:white;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.main_content section article:hover {
+    border-right: 3px solid #782221;
+}
+
+
+.main_content h3 {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 20px 40px 20px 30px;
+}
+
+.main_content p {
+    font-family: "Raleway_regular", sans-serif;
+    font-size: 0.9em;
+    color: black;
+    text-align: justify;
+    margin: 20px 40px 20px 30px;
+}
+
+.main_content ul li {
+    font-family: "Raleway_regular", sans-serif;
+    font-size: 0.9em;
+    color: black;
+}
+
+.main_content li {
+    margin: 0px 40px 0px 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #782221;
+    color: white;
+    font-family: "Raleway_regular", sans-serif;
+    font-size: normal;
+    padding: 20px 0 0 20px;
+}       
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 20px 20px;
+}
+
+footer img:hover {
+    opacity :0.7;
+}
